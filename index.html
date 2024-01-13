@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Montando um CRUD</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="container">
+    <div class="main">
+      <div class="box">
+        <form class="form">
+          <div class="field">
+            <label>Nome do cliente</label>
+            <input class="input" name="nameClient" type="text">
+          </div>
+          <div class="field">
+            <label>Carregamento</label>
+            <input class="input" name="numberWeight" type="number">
+          </div>
+          <div class="field">
+            <label>Dia do faturamento</label>
+            <input class="input" name="billingDay" type="number">
+          </div>
+          <div class="field">
+            <button class="button" type="submit">Adicionar</button>
+          </div>
+        </form>
+      </div>
+      <div class="box">
+        <table class="table">
+          <thead class="thead">
+            <tr>
+              <td>#</td>
+              <td>Nome do cliente</td>
+              <td>Nº Carregamento</td>
+              <td>Dia faturamento</td>
+            </tr>
+          </thead>
+          <tbody class="tbody">
+          </tbody>
+        </table>
+        <div class="message-feedback">Nenhum conteúdo cadastrado</div>
+      </div>
+    </div>
+  </div>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="script.js"></script>
+</body>
+
+</html>
